@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Serif Display", serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(41, 47, 54);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.center {
+  padding-left: calc(50% - 952px);
+  padding-right: calc(50% - 952px);
+}
+
+.header {
+  margin: 50px 360px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 780px;
+}
+.nav__main-logo {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.nav__main-link {
+  display: flex;
+  gap: 10px;
+}
+.nav__main-title {
+  font-size: 40px;
+}
+.nav__menu {
+  display: flex;
+  gap: 20px;
+  font-family: "Jost";
+  font-size: 20px;
+  text-align: center;
+}
+.nav__menu a:hover {
+  color: rgb(205, 162, 116);
+  transition: 0.3s;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 56px;
+}
+
+.banner {
+  padding-top: 208px;
+  padding-bottom: 208px;
+  background: url(../img/banner_image.jpeg) no-repeat;
+  width: 1200px;
+  border-radius: 60px;
+}
+.banner__title {
+  color: rgb(41, 47, 54);
+  font-size: 65px;
+  margin-left: 52px;
+  width: 434px;
+}
+.banner__text {
+  color: rgb(77, 80, 83);
+  font-family: "Jost";
+  font-size: 22px;
+  margin-top: 18px;
+  margin-left: 52px;
+  width: 434px;
+}
+.banner__btn {
+  margin-top: 20px;
+  background-color: rgb(41, 47, 54);
+  border: none;
+  border-radius: 18px;
+  margin-left: 52px;
+  width: 220px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-left: 48px;
+}
+.banner__link {
+  color: rgb(255, 255, 255);
+  font-family: "Jost";
+  font-weight: 600;
+  font-size: 18px;
+}
+.banner__vector {
+  margin-right: 48px;
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.project__title {
+  padding-top: 96px;
+  padding-bottom: 8px;
+  color: rgb(41, 47, 54);
+  font-size: 50px;
+}
+.project__text {
+  color: rgb(77, 80, 83);
+  width: 736px;
+  font-family: "Jost";
+  font-size: 22px;
+  padding-bottom: 92px;
+}
+.project__item-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 548px);
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 54px;
+}
+.project__item img {
+  background-size: cover;
+  width: 525px;
+  height: 548px;
+}
+.project__item-img1 {
+  border-top-right-radius: 100px;
+}
+.project__item-img2 {
+  border-top-left-radius: 100px;
+}
+.project__item-img3 {
+  border-bottom-right-radius: 100px;
+}
+.project__item-img4 {
+  border-bottom-left-radius: 100px;
+}
+.project__item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 56px;
+}
+.project__item-subinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  padding-top: 28px;
+}
+.project__item-title {
+  color: rgb(41, 47, 54);
+  font-size: 25px;
+}
+.project__item-text {
+  color: rgb(77, 80, 83);
+  font-size: 22px;
+}
+.project__item-button {
+  padding-top: 24px;
+}
+.project__item-button img {
+  width: 70px;
+  height: 70px;
+}
+
+.counter {
+  background-color: rgb(244, 240, 236);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.counter__title {
+  color: rgb(205, 162, 116);
+  font-size: 85px;
+}
+.counter__text {
+  color: rgb(77, 80, 83);
+  font-family: "Jost";
+  font-size: 22px;
+}
+
+.vl {
+  border: 1px solid rgb(205, 162, 116);
+  height: 130px;
+  margin-left: 76px;
+  margin-right: 76px;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+.blog__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.blog__info-title {
+  margin-bottom: 12px;
+  color: rgb(41, 47, 54);
+  font-size: 50px;
+}
+.blog__info-text {
+  margin-bottom: 52px;
+  color: rgb(77, 80, 83);
+  font-size: 22px;
+  width: 810px;
+}
+.blog__items {
+  display: grid;
+  grid-template-columns: repeat(3, 382px);
+  gap: 26px;
+}
+.blog__item {
+  border: 1px solid #e7e7e7;
+  border-radius: 62px;
+  padding: 20px;
+}
+.blog__item-select {
+  background: #f4f0ec;
+}
+.blog__item-image {
+  position: relative;
+}
+.blog__item-image img {
+  border-top-left-radius: 62px;
+  border-top-right-radius: 62px;
+  margin-bottom: 20px;
+}
+.blog__item-image p {
+  position: absolute;
+  top: 228px;
+  left: 20px;
+  border-radius: 8px 8px 8px 0px;
+  background: #fff;
+  padding: 4px 10px 8px 11px;
+  color: rgb(77, 80, 83);
+  font-size: 16px;
+}
+.blog__item-title {
+  margin-bottom: 30px;
+  color: rgb(41, 47, 54);
+  font-size: 25px;
+}
+.blog__item-text {
+  color: rgb(77, 80, 83);
+  font-family: "Jost";
+  font-size: 16px;
+}
+.blog__item-link-img {
+  width: 52px;
+  height: 52px;
+}
+.blog__wrap-text {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer .brand {
+  display: flex;
+  flex-direction: column;
+  padding-right: 100px;
+  padding-bottom: 18px;
+}
+.footer .brand__content {
+  display: flex;
+  gap: 10px;
+}
+.footer .brand__title {
+  color: rgb(41, 47, 54);
+  font-size: 40px;
+}
+.footer .brand__text {
+  font-family: "Jost";
+  color: rgb(77, 80, 83);
+  font-size: 22px;
+  width: 392px;
+}
+.footer .pages {
+  display: flex;
+  flex-direction: column;
+  padding-right: 380px;
+  gap: 30px;
+}
+.footer .pages__title {
+  color: rgb(41, 47, 54);
+  font-size: 25px;
+}
+.footer .pages__menu {
+  font-family: "Jost";
+  color: rgb(77, 80, 83);
+  font-size: 22px;
+}
+.footer .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer .contact__title {
+  color: rgb(41, 47, 54);
+  font-size: 25px;
+}
+.footer .contact__address {
+  font-family: "Jost";
+  color: rgb(77, 80, 83);
+  font-size: 22px;
+  width: 258px;
+}
+.footer .contact__email {
+  font-family: "Jost";
+  color: rgb(77, 80, 83);
+  font-size: 22px;
+}
+.footer .contact__phone {
+  font-family: "Jost";
+  color: rgb(77, 80, 83);
+  font-size: 22px;
+  padding-bottom: 134px;
+}
+
+.top {
+  background: url(../img/blog_banner_top.jpg) no-repeat;
+  height: 356px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.top__intro {
+  text-align: center;
+  background: #fff;
+  padding: 41px 78px;
+  border-top-left-radius: 37px;
+  border-top-right-radius: 37px;
+}
+.top__intro-title {
+  color: rgb(41, 47, 54);
+  font-size: 50px;
+}
+.top__intro-text {
+  color: rgb(77, 80, 83);
+  font-family: "Jost";
+  font-size: 22px;
+}
+
+.latest-post {
+  width: 1200px;
+  padding-bottom: 54px;
+}
+.latest-post__caption {
+  color: rgb(41, 47, 54);
+  font-size: 50px;
+  margin-top: 200px;
+  margin-bottom: 48px;
+}
+.latest-post__container {
+  border: 1px solid #e7e7e7;
+  display: flex;
+  gap: 62px;
+  padding: 22px;
+  border-radius: 62px;
+  align-items: center;
+}
+.latest-post__title {
+  color: rgb(41, 47, 54);
+  font-size: 25px;
+  width: 462px;
+  margin-bottom: 22px;
+}
+.latest-post__text {
+  color: rgb(77, 80, 83);
+  font-family: "Jost";
+  font-size: 22px;
+  width: 468px;
+  margin-bottom: 30px;
+}
+.latest-post__content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.latest-post__content-container img {
+  width: 52px;
+  height: 52px;
+}
+.latest-post__data {
+  color: rgb(77, 80, 83);
+  font-family: "Jost";
+  font-size: 16px;
+}
+.latest-post img {
+  border-radius: 50px;
+}
+
+.pagination {
+  margin-top: 50px;
+  margin-bottom: 104px;
+}
+.pagination__container {
+  display: flex;
+  gap: 20px;
+}
+.pagination__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cda274;
+  width: 52px;
+  height: 52px;
+  border-radius: 52px;
+}
+.pagination__number-text {
+  color: rgb(41, 47, 54);
+  font-family: "Jost";
+  font-size: 16px;
+}
+.pagination__number:hover {
+  background: #f4f0ec;
+  border: none;
+  width: 54px;
+  height: 54px;
+}
+.pagination__svg:hover {
+  fill: #f4f0ec;
+}/*# sourceMappingURL=style.css.map */

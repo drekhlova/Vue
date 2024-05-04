@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Homework №2</title>
+  </head>
+  <body>
+    <header class="header center">
+      <nav class="nav">
+        <div class="nav__main-link">
+          <img class="nav__main-logo" src="img/Logo.svg" alt="Logo" />
+          <h1 class="nav__main-title"><a href="main.html">Interno</a></h1>
+        </div>
+        <div class="nav__menu">
+          <a href="main.html">Home</a>
+          <a href="#">Project</a>
+          <a href="blog.html">Blog</a>
+        </div>
+      </nav>
+    </header>
+    <section class="top">
+      <div class="top__intro">
+        <h1 class="top__intro-title">Articles & News</h1>
+        <p class="top__intro-text">Home / Blog</p>
+      </div>
+    </section>
+    <div class="container latest-post">
+      <div class="latest-post">
+        <h2 class="latest-post__caption">Latest Post</h2>
+        <div class="latest-post__container">
+          <img src="img/latest-post.jpg" alt="latest-post-img" />
+          <div class="latest-post__content">
+            <h3 class="latest-post__title">
+              Low Cost Latest Invented Interior Designing Ideas
+            </h3>
+            <p class="latest-post__text">
+              Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis
+              dignissim maximus.posuere in.Contrary to popular belief.
+            </p>
+            <p class="latest-post__text">
+              Lorem Ipsum is not simply random text. It has roots in a piece of
+              classica.
+            </p>
+            <div class="latest-post__content-container">
+              <p class="latest-post__data">26 December, 2022</p>
+              <a href="#"><img src="img/strelka.svg" alt="strelka" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="blog center">
+      <h2 class="blog__info-title">Articles & News</h2>
+      <div class="blog__items">
+        <div
+          v-for="(article, index) in articles"
+          v-if="index < 6"
+          class="blog__item"
+        >
+          <div class="blog__item-image">
+            <img :src="'img/' + article.image" :alt="article.image" />
+            <p class="blog__img-text">{{article.imgText}}</p>
+          </div>
+          <h2 class="blog__item-title">{{article.itemTitle}}</h2>
+          <div class="blog__wrap-text">
+            <p class="blog__item-text">{{article.itemData}}</p>
+            <a href="">
+              <img
+                src="img/strelka.svg"
+                alt="strelka"
+                width="52px"
+                height="52px"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <div class="pagination__container">
+          <a href="#" class="pagination__number">
+            <p class="pagination__number-text">01</p>
+          </a>
+          <a href="#" class="pagination__number">
+            <p class="pagination__number-text">02</p>
+          </a>
+          <a href="#" class="pagination__number">
+            <p class="pagination__number-text">03</p>
+          </a>
+          <a href="#">
+            <svg
+              class="pagination__svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="53"
+              height="52"
+              viewBox="0 0 53 52"
+              fill="none"
+            >
+              <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
+              <path
+                d="M23.5571 32L29.5 25.3143L23.5571 18.6286"
+                stroke="#292F36"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer center">
+      <div class="brand">
+        <div class="brand__content">
+          <img class="brand__logo" src="img/Logo.svg" alt="Logo" />
+          <h1 class="brand__title"><a href="main.html">Interno</a></h1>
+        </div>
+        <p class="brand__text">
+          It is a long established fact that a reader will be distracted
+          lookings.
+        </p>
+      </div>
+      <div class="pages">
+        <h2 class="pages__title">Pages</h2>
+        <a class="pages__menu" href="main.html">Home </a>
+        <a class="pages__menu" href="#">Project </a>
+        <a class="pages__menu" href="#">Blog</a>
+      </div>
+      <div class="contact">
+        <h2 class="contact__title">Contact</h2>
+        <p class="contact__address">
+          55 East Birchwood Ave. Brooklyn, New York 11201
+        </p>
+        <p class="contact__email">contact@interno.com</p>
+        <p class="contact__phone">(123) 456 - 7890</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="Scripts/script.js"></script>
+  </body>
+</html>

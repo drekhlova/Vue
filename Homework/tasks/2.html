@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework №2</title>
+  </head>
+  <body>
+    <div id="app">
+      <button @click="sort">Сортировка: {{text}}</button>
+      <div v-for="product in sortedProduct">
+        <h2>{{product.productName}}</h2>
+        <p>{{product.productPrice}}</p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          text: "по возрастанию",
+          isSorted: 0,
+          products: [
+            {
+              productName: "Продукт 1",
+              productPrice: 80,
+            },
+            {
+              productName: "Продукт 2",
+              productPrice: 100,
+            },
+            {
+              productName: "Продукт 3",
+              productPrice: 50,
+            },
+            {
+              productName: "Продукт 4",
+              productPrice: 20,
+            },
+          ],
+        },
+        methods: {
+          sort() {
+            if (this.isSorted === 1) {
+              this.isSorted = 2;
+              this.text = "по убыванию";
+            } else {
+              this.isSorted = 1;
+              this.text = "по возрастанию";
+            }
+          },
+        },
+        computed: {
+          sortedProduct() {
+            switch (this.isSorted) {
+              case 1:
+                return this.products.sort(function (product1, product2) {
+                  if (product1.productPrice > product2.productPrice) {
+                    return 1;
+                  } else {
+                    return -1;
+                  }
+                });
+              case 2:
+                return this.products.sort(function (product1, product2) {
+                  if (product1.productPrice < product2.productPrice) {
+                    return 1;
+                  } else {
+                    return -1;
+                  }
+                });
+              default:
+                return this.products;
+            }
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
