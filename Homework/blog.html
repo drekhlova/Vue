@@ -27,6 +27,7 @@
       </nav>
     </header>
     <section class="top">
+      <img class="top__img" src="img/blog_banner_top.jpg" alt="" />
       <div class="top__intro">
         <h1 class="top__intro-title">Articles & News</h1>
         <p class="top__intro-text">Home / Blog</p>
@@ -72,12 +73,13 @@
           <h2 class="blog__item-title">{{article.itemTitle}}</h2>
           <div class="blog__wrap-text">
             <p class="blog__item-text">{{article.itemData}}</p>
-            <a href="">
+            <a href="article.link" v-if="index < 6">
               <img
                 src="img/strelka.svg"
                 alt="strelka"
                 width="52px"
                 height="52px"
+                @click.prevent="redirectToLink(article.link)"
               />
             </a>
           </div>
