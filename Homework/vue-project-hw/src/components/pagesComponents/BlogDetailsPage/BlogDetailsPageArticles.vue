@@ -40,7 +40,7 @@
             <div class="tags__buttons-wrap">
                 <h2 class="tags__title">Tags</h2>
                 <div class="tags__buttons">
-                  <button v-for="(btn, index) in buttonList" @click="filterClick(btn)" class="tags__buttons-item" :key="index">{{ btn }}</button>
+                  <button v-for="(tag, index) in tagsList" @click="filterClick(tag)" class="tags__buttons-item" :key="index">{{ tag }}</button>
                 </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default {
 
   data () {
     return {
-      findelement: '',
+      findElement: '',
       contentsArticles: [
         {
           id: 0,
@@ -87,7 +87,7 @@ export default {
           tag: 'Kitchen Planning'
         }
       ],
-      buttonList: [
+      tagsList: [
         'Kitchen',
         'Bedroom',
         'Building',
@@ -104,13 +104,13 @@ export default {
 
   methods: {
     filterClick (item) {
-      this.findelement = item
+      this.findElement = item
     }
   },
   computed: {
     filterArticle () {
-      return this.findelement
-        ? this.contentsArticles.filter((el) => el.tag.includes(this.findelement))
+      return this.findElement
+        ? this.contentsArticles.filter((el) => el.tag.includes(this.findElement))
         : this.contentsArticles
     }
   }
@@ -137,12 +137,12 @@ export default {
         margin-bottom: 20px;
      }
      &__img {
-        margin-top: 21px;
-        margin-bottom: 35px;
+        margin-top: 20px;
+        margin-bottom: 34px;
         border-radius: 50px;
      }
      &__info {
-        margin-top: 11px;
+        margin-top: 10px;
         display: flex;
         justify-content: space-between;
         margin-bottom: 46px;
@@ -182,7 +182,7 @@ export default {
   }
   .tags {
      &__buttons-wrap {
-        width: 345px;
+        width: 344px;
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -222,7 +222,7 @@ export default {
      gap: 10px;
      &__quotation-marks {
         width: 106px;
-        height: 133px;
+        height: 132px;
         flex-shrink: 0;
         color: #cda274;
         text-align: center;
