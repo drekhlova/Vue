@@ -47,14 +47,17 @@ export default {
        align-items: center;
        gap: 10px;
     }
+
     &__logo img {
        width: 34px;
        height: 34px;
     }
+
     &__logo h1 {
        font-size: 40px;
        color: $blackTextColor;
     }
+
     &__menu {
        text-align: center;
        font-family: $familyText;
@@ -62,10 +65,12 @@ export default {
        display: flex;
        gap: 40px;
     }
+
     &__menu a:hover {
        color: rgb(205, 162, 116);
        transition: 0.3s;
     }
+
     &__link {
        color: $blackTextColor;
     }

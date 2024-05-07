@@ -58,21 +58,25 @@ export default {
     flex-direction: column;
     padding-right: 100px;
     padding-bottom: 18px;
+
     &__content {
       display: flex;
       align-items: center;
       gap: 10px;
       margin-bottom: 26px;
     }
+
     &__logo {
       width: 34px;
       height: 34px;
     }
+
     & a {
       font-family: $familyTitle;
       color: $blackTextColor;
       font-size: 40px;
     }
+
     &__text {
       font-family: $familyText;
       color: $grayTextColor;
@@ -85,11 +89,13 @@ export default {
     flex-direction: column;
     padding-right: 380px;
     gap: 30px;
+
     &__title {
       font-family: $familyTitle;
       color: $blackTextColor;
       font-size: 25px;
     }
+
     &__menu {
       font-family: $familyText;
       color: $grayTextColor;
@@ -100,22 +106,26 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 30px;
+
     &__title {
       font-family: $familyTitle;
       color: $blackTextColor;
       font-size: 25px;
     }
+
     &__address {
       font-family: $familyText;
       color: $grayTextColor;
       font-size: 22px;
       width: 258px;
     }
+
     &__email {
       font-family: $familyText;
       color: $grayTextColor;
       font-size: 22px;
     }
+
     &__phone {
       font-family: $familyText;
       color: $grayTextColor;

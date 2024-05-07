@@ -10,7 +10,7 @@
              <p class="latest-post__content-text">Lorem Ipsum is not simply random text. It has roots in a piece of
                 classica.</p>
              <div class="latest-post__content-wrap">
-                <p class="latest-post__content-data">26 December, 2022</p>
+                <p class="latest-post__content-data">26 December,2022</p>
                 <a href="#">
                    <img src="../../../assets/images/row_left_blog.svg" alt="row_left_blog">
                </a>
@@ -69,24 +69,24 @@ export default {
           color: $blackTextColor;
           font-family: $familyTitle;
           font-size: 25px;
+          width: 462px;
        }
        &-text {
           margin-bottom: 40px;
           color: $grayTextColor;
           font-family: $familyText;
           font-size: 22px;
+          width: 468px;
        }
        &-wrap {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          flex-wrap: nowrap;
        }
        &-data {
           color:  $grayTextColor;
           font-family: $familyText;
           font-size: 16px;
-          font-style: normal;
        }
     }
  }

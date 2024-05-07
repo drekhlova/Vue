@@ -47,6 +47,7 @@ export default {
           font-family: $familyTitle;
           font-size: 50px;
        }
+
        &-text {
           color: $grayTextColor;
           font-family: $familyText;

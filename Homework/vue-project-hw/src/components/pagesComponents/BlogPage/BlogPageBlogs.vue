@@ -2,19 +2,19 @@
     <section class="blog center">
        <h2 class="blog__title-left">Articles & News</h2>
        <ArticlesComponent :quantity="6"></ArticlesComponent>
-       <div class="count__page">
-          <div class="count__page-wrap">
-             <a href="#" class="count__page-number">
-                <p class="count__page-number-text">01</p>
+       <div class="pagination">
+          <div class="pagination__wrap">
+             <a href="#" class="pagination__number">
+                <p class="pagination__number-text">01</p>
              </a>
-             <a href="#" class="count__page-number">
-                <p class="count__page-number-text">02</p>
+             <a href="#" class="pagination__number">
+                <p class="pagination__number-text">02</p>
              </a>
-             <a href="#" class="count__page-number">
-                <p class="count__page-number-text">03</p>
+             <a href="#" class="pagination__number">
+                <p class="pagination__number-text">03</p>
              </a>
              <a href="#">
-                <svg class="count__page-svg" xmlns="http://www.w3.org/2000/svg" width="53" height="52"
+                <svg class="pagination__svg" xmlns="http://www.w3.org/2000/svg" width="53" height="52"
                    viewBox="0 0 53 52" fill="none">
                    <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
                    <path d="M23.5571 32L29.5 25.3143L23.5571 18.6286" stroke="#292F36" stroke-width="2"
@@ -106,16 +106,16 @@ export default {
    font-family: $familyTitle;
    font-size: 50px;
  }
- .count__page {
+ .pagination {
     margin-top: 50px;
     margin-bottom: 200px;
     display: flex;
     justify-content: center;
-    &-wrap {
+    &__wrap {
        display: flex;
        gap: 20px;
     }
-    &-number {
+    &__number {
        display: flex;
        justify-content: center;
        align-items: center;
@@ -137,7 +137,7 @@ export default {
           height: 54px;
        }
     }
-    &-svg:hover {
+    &__svg:hover {
        fill: #f4f0ec;
        & circle {
           stroke: none;
