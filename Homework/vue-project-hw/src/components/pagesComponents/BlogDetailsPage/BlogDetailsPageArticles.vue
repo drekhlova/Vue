@@ -231,6 +231,7 @@ export default {
   }
 
   &__buttons-item {
+    cursor: pointer;
     color: $blackTextColor;
     font-family: $familyText;
     font-size: 18px;
