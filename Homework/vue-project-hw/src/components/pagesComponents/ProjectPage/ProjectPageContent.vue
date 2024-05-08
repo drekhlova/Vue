@@ -101,7 +101,16 @@ export default {
     activCategories (data) {
       switch (data.id) {
         case 1:
+          this.projects = this.otherProjects1
+          break
+        case 2:
           this.projects = this.contentsProjects
+          break
+        case 3:
+          this.projects = this.otherProjects2
+          break
+        case 4:
+          this.projects = this.otherProjects3
           break
       }
     }
