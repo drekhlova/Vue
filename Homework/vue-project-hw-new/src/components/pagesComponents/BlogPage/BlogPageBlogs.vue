@@ -27,7 +27,7 @@
  </template>
 
 <script>
-import ArticlesComponent from './../../ArticlesComponent.vue'
+import ArticlesComponent from '../../ArticlesComponent.vue'
 
 export default {
   name: 'BlogPageBlogs',
