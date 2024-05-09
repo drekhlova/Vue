@@ -1,7 +1,7 @@
 <template>
     <div>
       <HeaderComponent></HeaderComponent>
-      <BlogDetailsPageBaner></BlogDetailsPageBaner>
+      <BlogDetailsPageBanner></BlogDetailsPageBanner>
       <BlogDetailsPageArticles></BlogDetailsPageArticles>
       <FooterComponent></FooterComponent>
     </div>
@@ -9,7 +9,7 @@
 
 <script>
 import HeaderComponent from '../components/HeaderComponent.vue'
-import BlogDetailsPageBaner from '../components/pagesComponents/BlogDetailsPage/BlogDetailsPageBaner.vue'
+import BlogDetailsPageBanner from '../components/pagesComponents/BlogDetailsPage/BlogDetailsPageBaner.vue'
 import BlogDetailsPageArticles from '../components/pagesComponents/BlogDetailsPage/BlogDetailsPageArticles.vue'
 import FooterComponent from '../components/FooterComponent.vue'
 
@@ -18,7 +18,7 @@ export default {
 
   components: {
     HeaderComponent,
-    BlogDetailsPageBaner,
+    BlogDetailsPageBanner,
     BlogDetailsPageArticles,
     FooterComponent
   },

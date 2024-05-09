@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'HomePageBaner',
+  name: 'HomePageBanner',
 
   data () {
     return {

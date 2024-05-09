@@ -1,7 +1,7 @@
 <template>
     <div>
       <HeaderComponent></HeaderComponent>
-      <HomePageBaner></HomePageBaner>
+      <HomePageBanner></HomePageBanner>
       <HomePageProject></HomePageProject>
       <HomePageCounter></HomePageCounter>
       <HomePageArticles></HomePageArticles>
@@ -11,7 +11,7 @@
 
 <script>
 import HeaderComponent from '../components/HeaderComponent.vue'
-import HomePageBaner from '../components/pagesComponents/HomePage/HomePageBaner.vue'
+import HomePageBanner from '../components/pagesComponents/HomePage/HomePageBanner.vue'
 import HomePageProject from '../components/pagesComponents/HomePage/HomePageProject.vue'
 import HomePageCounter from '../components/pagesComponents/HomePage/HomePageCounter.vue'
 import HomePageArticles from '../components/pagesComponents/HomePage/HomePageArticles.vue'
@@ -22,7 +22,7 @@ export default {
 
   components: {
     HeaderComponent,
-    HomePageBaner,
+    HomePageBanner,
     HomePageProject,
     HomePageCounter,
     HomePageArticles,

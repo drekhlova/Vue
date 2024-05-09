@@ -5,7 +5,7 @@
 
 <script>
 export default {
-  name: 'BlogDetailsBaner',
+  name: 'BlogDetailsBanner',
 
   data () {
     return {

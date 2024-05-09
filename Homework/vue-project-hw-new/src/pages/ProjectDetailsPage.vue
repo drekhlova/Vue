@@ -1,7 +1,7 @@
 <template>
     <div>
       <HeaderComponent></HeaderComponent>
-      <ProjectDetailsBaner></ProjectDetailsBaner>
+      <ProjectDetailsBanner></ProjectDetailsBanner>
       <ProjectDetailsContent></ProjectDetailsContent>
       <FooterComponent></FooterComponent>
     </div>
@@ -9,12 +9,12 @@
 
 <script>
 import HeaderComponent from '../components/HeaderComponent.vue'
-import ProjectDetailsBaner from '@/components/pagesComponents/ProjectDetailsPage/ProjectDetailsBaner.vue'
+import ProjectDetailsBanner from '@/components/pagesComponents/ProjectDetailsPage/ProjectDetailsBanner.vue'
 import ProjectDetailsContent from '../components/pagesComponents/ProjectDetailsPage/ProjectDetailsContent.vue'
 import FooterComponent from '../components/FooterComponent.vue'
 
 export default {
-  components: { HeaderComponent, FooterComponent, ProjectDetailsBaner, ProjectDetailsContent },
+  components: { HeaderComponent, FooterComponent, ProjectDetailsBanner, ProjectDetailsContent },
   name: 'ProjectDetailsPage',
 
   data () {

@@ -39,7 +39,10 @@ export default {
   .project-details {
     text-align: center;
   }
-
+  .carousel {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
   .slide img {
     border-radius: 70px;
   }

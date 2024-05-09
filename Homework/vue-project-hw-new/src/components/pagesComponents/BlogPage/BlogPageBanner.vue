@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'BlogPageBaner',
+  name: 'BlogPageBanner',
 
   data () {
     return {
