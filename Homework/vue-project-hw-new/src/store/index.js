@@ -21,16 +21,16 @@ export default new Vuex.Store({
     fetchSlides ({ commit }) {
       commit('SET_SLIDES', [
         {
-          alt: 'image 1',
+          alt: 'img 1',
           url: 'project_details_photo.jpg'
         },
         {
-          alt: 'image 2',
-          url: 'project_details_photo.jpg'
+          alt: 'img 2',
+          url: 'project5.jpg'
         },
         {
-          alt: 'image 3',
-          url: 'project_details_photo.jpg'
+          alt: 'img 3',
+          url: 'project1.jpg'
         }
       ])
     }
