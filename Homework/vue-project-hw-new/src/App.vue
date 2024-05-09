@@ -7,6 +7,8 @@
     <BlogDetailsPage></BlogDetailsPage>
 
     <ProjectPage></ProjectPage>
+
+    <ProjectDetailsPage></ProjectDetailsPage>
   </div>
 </template>
 
@@ -20,6 +22,8 @@ import BlogDetailsPage from './pages/BlogDetailsPage.vue'
 
 import ProjectPage from './pages/ProjectPage.vue'
 
+import ProjectDetailsPage from './pages/ProjectDetailsPage.vue'
+
 export default {
   name: 'App',
   components: {
@@ -29,7 +33,9 @@ export default {
 
     BlogDetailsPage,
 
-    ProjectPage
+    ProjectPage,
+
+    ProjectDetailsPage
 
   }
 }
