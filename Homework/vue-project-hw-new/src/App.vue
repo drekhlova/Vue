@@ -1,32 +1,54 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <HomePage></HomePage>
+
+    <BlogPage></BlogPage>
+
+    <BlogDetailsPage></BlogDetailsPage>
+
+    <ProjectPage></ProjectPage>
   </div>
 </template>
 
+<script>
+
+import HomePage from './pages/HomePage.vue'
+
+import BlogPage from './pages/BlogPage.vue'
+
+import BlogDetailsPage from './pages/BlogDetailsPage.vue'
+
+import ProjectPage from './pages/ProjectPage.vue'
+
+export default {
+  name: 'App',
+  components: {
+    HomePage,
+
+    BlogPage,
+
+    BlogDetailsPage,
+
+    ProjectPage
+
+  }
+}
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import "scss/vars";
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-nav {
-  padding: 30px;
+a {
+  text-decoration: none;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.center {
+  padding-left: calc(50% - $widthSite / 2);
+  padding-right: calc(50% - $widthSite / 2);
 }
 </style>
