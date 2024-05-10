@@ -1,18 +1,17 @@
 <template>
-    <section class="offer center">
-       <div class="baner">
-             <h2 class="baner__title">Let Your Home Be Unique</h2>
-             <p class="baner__text">There are many variations of the passages of
-                lorem Ipsum fromavailable, majority.</p>
-             <a href="#" class="baner__btn">
-                <div class="baner__link">
-                   <p>Get Started</p>
-                   <img src="../../../assets/images/row_left.svg" alt="row_left">
-                </div>
-             </a>
-       </div>
-    </section>
- </template>
+   <section class="offer center">
+      <div class="baner">
+         <h2 class="baner__title">Let Your Home Be Unique</h2>
+         <p class="baner__text">There are many variations of the passages of lorem Ipsum fromavailable, majority.</p>
+         <router-link to="/project" class="baner__btn">
+            <div class="baner__link">
+               <p>Get Started</p>
+               <img src="../../../assets/images/row_left.svg" alt="row_left">
+            </div>
+         </router-link>
+      </div>
+   </section>
+</template>
 
 <script>
 export default {

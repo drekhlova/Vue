@@ -2,12 +2,15 @@
     <header class="header center">
        <div class="header__logo">
           <img src="../assets/images/Logo.jpg" alt="logo">
-          <h1 class="logo__text">Interno</h1>
+          <router-link class="header__link" to="/"><h1 class="logo__text">Interno</h1></router-link>
        </div>
        <div class="header__menu">
-          <a class="header__link" href="#">Home</a>
+         <router-link class="header__link" to="/">Home</router-link>
+         <router-link class="header__link" to="/Project">Project</router-link>
+         <router-link class="header__link" to="/Blog">Blog</router-link>
+          <!-- <a class="header__link" href="#">Home</a>
           <a class="header__link" href="#">Project</a>
-          <a class="header__link" href="#">Blog</a>
+          <a class="header__link" href="#">Blog</a> -->
        </div>
     </header>
  </template>

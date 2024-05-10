@@ -1,5 +1,11 @@
 <template>
   <div id="app">
+    <router-view />
+  </div>
+</template>
+
+<!-- <template>
+  <div id="app">
     <HomePage></HomePage>
 
     <BlogPage></BlogPage>
@@ -39,7 +45,7 @@ export default {
 
   }
 }
-</script>
+</script> -->
 
 <style lang="scss">
 @import "scss/vars";

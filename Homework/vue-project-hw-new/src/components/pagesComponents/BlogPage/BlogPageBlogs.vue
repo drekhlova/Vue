@@ -1,28 +1,28 @@
 <template>
     <section class="blog center">
        <h2 class="blog__title-left">Articles & News</h2>
-       <ArticlesComponent :quantity="6"></ArticlesComponent>
-       <div class="pagination">
+       <ArticlesComponent :quantity="6" :visible="true"></ArticlesComponent>
+       <!-- <div class="pagination">
           <div class="pagination__wrap">
-             <a href="#" class="pagination__number">
-                <p class="pagination__number-text">01</p>
-             </a>
-             <a href="#" class="pagination__number">
-                <p class="pagination__number-text">02</p>
-             </a>
-             <a href="#" class="pagination__number">
-                <p class="pagination__number-text">03</p>
-             </a>
-             <a href="#">
+            <router-link to="/blog" class="pagination__number">
+              <p class="pagination__number-text">01</p>
+            </router-link>
+            <router-link to="/blog" class="pagination__number">
+              <p class="pagination__number-text">02</p>
+            </router-link>
+            <router-link to="/blog" class="pagination__number">
+              <p class="pagination__number-text">03</p>
+            </router-link>
+            <router-link to="/blog">
                 <svg class="pagination__svg" xmlns="http://www.w3.org/2000/svg" width="53" height="52"
                    viewBox="0 0 53 52" fill="none">
                    <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
                    <path d="M23.5571 32L29.5 25.3143L23.5571 18.6286" stroke="#292F36" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-             </a>
+            </router-link>
           </div>
-       </div>
+       </div> -->
     </section>
  </template>
 
@@ -106,42 +106,42 @@ export default {
    font-family: $familyTitle;
    font-size: 50px;
  }
- .pagination {
-    margin-top: 50px;
-    margin-bottom: 200px;
-    display: flex;
-    justify-content: center;
-    &__wrap {
-       display: flex;
-       gap: 20px;
-    }
-    &__number {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-wrap: nowrap;
-       border: 1px #cda274 solid;
-       width: 52px;
-       height: 52px;
-       border-radius: 52px;
-       &-text {
-          color: $grayTextColor;
-          font-family: $familyText;
-          font-size: 16px;
-          font-weight: $font-500;
-       }
-       &:hover {
-          background: #f4f0ec;
-          border: none;
-          width: 54px;
-          height: 54px;
-       }
-    }
-    &__svg:hover {
-       fill: #f4f0ec;
-       & circle {
-          stroke: none;
-       }
-    }
- }
+//  .pagination {
+//     margin-top: 50px;
+//     margin-bottom: 200px;
+//     display: flex;
+//     justify-content: center;
+//     &__wrap {
+//        display: flex;
+//        gap: 20px;
+//     }
+//     &__number {
+//        display: flex;
+//        justify-content: center;
+//        align-items: center;
+//        flex-wrap: nowrap;
+//        border: 1px #cda274 solid;
+//        width: 52px;
+//        height: 52px;
+//        border-radius: 52px;
+//        &-text {
+//           color: $grayTextColor;
+//           font-family: $familyText;
+//           font-size: 16px;
+//           font-weight: $font-500;
+//        }
+//        &:hover {
+//           background: #f4f0ec;
+//           border: none;
+//           width: 54px;
+//           height: 54px;
+//        }
+//     }
+//     &__svg:hover {
+//        fill: #f4f0ec;
+//        & circle {
+//           stroke: none;
+//        }
+//     }
+//  }
  </style>

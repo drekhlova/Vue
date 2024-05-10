@@ -11,9 +11,9 @@
                    <h2 class="project__item-title">{{ project.title }}</h2>
                    <p class="project__item-text">{{ project.text }}</p>
                 </div>
-                <a href="#">
-                   <img src="../../../assets/images/row_left_blog.svg" alt="row_left_blog">
-                </a>
+                <router-link to="/project">
+                  <img src="../../../assets/images/row_left_blog.svg" alt="row_left_blog">
+               </router-link>
              </div>
           </div>
        </div>

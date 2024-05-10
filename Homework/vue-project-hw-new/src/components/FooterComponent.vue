@@ -12,9 +12,12 @@
       </div>
       <div class="pages">
         <h2 class="pages__title">Pages</h2>
-        <a class="pages__menu" href="#">Home </a>
+        <router-link class="pages__menu" to="/">Home</router-link>
+        <router-link class="pages__menu" to="/Project">Project</router-link>
+        <router-link class="pages__menu" to="/Blog">Blog</router-link>
+        <!-- <a class="pages__menu" href="#">Home </a>
         <a class="pages__menu" href="#">Project </a>
-        <a class="pages__menu" href="#">Blog</a>
+        <a class="pages__menu" href="#">Blog</a> -->
       </div>
       <div class="contact">
         <h2 class="contact__title">Contact</h2>

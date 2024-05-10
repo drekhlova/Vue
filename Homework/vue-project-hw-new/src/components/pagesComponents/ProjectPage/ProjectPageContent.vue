@@ -1,28 +1,23 @@
 <template>
   <section class="project center">
     <ProjectPageCategories @activCategories="activCategories" />
-    <ProjectPageProjectsNew :projects="projects" />
+    <ProjectPageProjectsNew :projects="projectPage" />
     <div class="pagination">
-          <div class="pagination__wrap">
-             <a href="#" class="pagination__number">
-                <p class="pagination__number-text">01</p>
-             </a>
-             <a href="#" class="pagination__number">
-                <p class="pagination__number-text">02</p>
-             </a>
-             <a href="#" class="pagination__number">
-                <p class="pagination__number-text">03</p>
-             </a>
-             <a href="#">
-                <svg class="pagination__svg" xmlns="http://www.w3.org/2000/svg" width="53" height="52"
-                   viewBox="0 0 53 52" fill="none">
-                   <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
-                   <path d="M23.5571 32L29.5 25.3143L23.5571 18.6286" stroke="#292F36" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-             </a>
-          </div>
-       </div>
+      <div class="pagination__wrap">
+        <router-link class="pagination__number" v-for="page in totalPages" :key="`p${page}`"
+          :to="`/project/${page}`">
+          <p class="pagination__number-text">{{ page }}</p>
+        </router-link>
+        <a href="#">
+          <svg class="pagination__svg" xmlns="http://www.w3.org/2000/svg" width="53" height="52"
+              viewBox="0 0 53 52" fill="none">
+              <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
+              <path d="M23.5571 32L29.5 25.3143L23.5571 18.6286" stroke="#292F36" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -39,6 +34,7 @@ export default {
 
   data () {
     return {
+      quantity: 8,
       projects: [],
       contentsProjects: [
         {
@@ -51,43 +47,91 @@ export default {
           id: 1,
           title: 'Minimal Bedroom',
           text: ' Decor / Artchitecture',
-          img: 'project2.jpg'
+          img: 'project3.jpg'
         },
         {
           id: 2,
           title: 'Classic Minimal Bedroom',
           text: ' Decor / Artchitecture',
-          img: 'project3.jpg'
+          img: 'project5.jpg'
         },
         {
           id: 3,
           title: 'Modern Bedroom',
           text: ' Decor / Artchitecture',
-          img: 'project4.jpg'
+          img: 'project7.jpg'
         },
         {
           id: 4,
           title: 'Minimal Bedroom table',
           text: ' Decor / Artchitecture',
-          img: 'project5.jpg'
+          img: 'project2.jpg'
         },
         {
           id: 5,
           title: 'System Table',
           text: ' Decor / Artchitecture',
-          img: 'project6.jpg'
+          img: 'project4.jpg'
         },
         {
           id: 6,
           title: 'Modern Bedroom',
           text: ' Decor / Artchitecture',
-          img: 'project7.jpg'
+          img: 'project6.jpg'
         },
         {
           id: 7,
           title: 'Modern Bedroom',
           text: ' Decor / Artchitecture',
           img: 'project8.jpg'
+        },
+        {
+          id: 8,
+          title: 'Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project8.jpg'
+        },
+        {
+          id: 9,
+          title: 'Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project6.jpg'
+        },
+        {
+          id: 10,
+          title: 'Classic Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project1.jpg'
+        },
+        {
+          id: 11,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project2.jpg'
+        },
+        {
+          id: 12,
+          title: 'Minimal Bedroom table',
+          text: ' Decor / Artchitecture',
+          img: 'project4.jpg'
+        },
+        {
+          id: 13,
+          title: 'System Table',
+          text: ' Decor / Artchitecture',
+          img: 'project7.jpg'
+        },
+        {
+          id: 14,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project5.jpg'
+        },
+        {
+          id: 15,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project3.jpg'
         }
       ]
     }
@@ -114,6 +158,20 @@ export default {
           break
       }
     }
+  },
+  computed: {
+    totalPages () {
+      return Math.ceil(this.projects.length / this.quantity)
+    },
+    currentPage () {
+      return this.$route.params.page || 1
+    },
+    projectPage () {
+      const pageNumber = this.currentPage
+      const startIndex = (pageNumber - 1) * this.quantity
+      const endIndex = startIndex + this.quantity
+      return this.projects.slice(startIndex, endIndex)
+    }
   }
 }
 </script>
@@ -122,7 +180,7 @@ export default {
 @import "../../../scss/vars";
 
 .project {
-  &__count-page {
+  .pagination {
     margin-top: 50px;
     margin-bottom: 200px;
     display: flex;
@@ -201,11 +259,11 @@ export default {
           height: 54px;
        }
     }
-    &__svg:hover {
-       fill: #f4f0ec;
-       & circle {
-          stroke: none;
-       }
-    }
+    // &__svg:hover {
+    //    fill: #f4f0ec;
+    //    & circle {
+    //       stroke: none;
+    //    }
+    // }
 }
 </style>

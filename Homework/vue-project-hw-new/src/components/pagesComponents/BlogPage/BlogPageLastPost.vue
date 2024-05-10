@@ -11,9 +11,9 @@
                 classica.</p>
              <div class="latest-post__content-wrap">
                 <p class="latest-post__content-data">26 December,2022</p>
-                <a href="#">
-                   <img src="../../../assets/images/row_left_blog.svg" alt="row_left_blog">
-               </a>
+                <router-link to="/blog-details">
+                  <img src="../../../assets/images/row_left_blog.svg" alt="row_left_blog">
+                </router-link>
              </div>
           </div>
        </div>

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+
+import HomePage from '@/pages/HomePage.vue'
 
 Vue.use(VueRouter)
 
@@ -8,15 +9,46 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomePage
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/project',
+    name: 'project',
+    component: () => import('../pages/ProjectPage.vue')
+  },
+  {
+    path: '/project/:page',
+    name: 'projectArticle',
+    component: () => import('../pages/ProjectPage.vue')
+  },
+  {
+    path: '/blog',
+    name: 'blog',
+    component: () => import('../pages/BlogPage.vue')
+  },
+  {
+    path: '/blog/:page',
+    name: 'blogArticle',
+    component: () => import('../pages/BlogPage.vue')
+  },
+  {
+    path: '/project-details',
+    name: 'project-details',
+    component: () => import('../pages/ProjectDetailsPage.vue')
+  },
+  {
+    path: '/blog-details',
+    name: 'blog-details',
+    component: () => import('../pages/BlogDetailsPage.vue')
+  },
+  {
+    path: '/404',
+    name: '404',
+    component: () => import('../pages/404.vue')
+  },
+  {
+    path: '*',
+    redirect: '/404'
   }
 ]
 
