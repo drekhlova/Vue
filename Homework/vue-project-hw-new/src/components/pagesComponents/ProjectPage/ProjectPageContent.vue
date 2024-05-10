@@ -133,6 +133,300 @@ export default {
           text: ' Decor / Artchitecture',
           img: 'project3.jpg'
         }
+      ],
+      otherProjects1: [
+        {
+          id: 0,
+          title: 'Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project1.jpg'
+        },
+        {
+          id: 1,
+          title: 'Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project3.jpg'
+        },
+        {
+          id: 2,
+          title: 'Classic Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project5.jpg'
+        },
+        {
+          id: 3,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project7.jpg'
+        },
+        {
+          id: 4,
+          title: 'Minimal Bedroom table',
+          text: ' Decor / Artchitecture',
+          img: 'project2.jpg'
+        },
+        {
+          id: 5,
+          title: 'System Table',
+          text: ' Decor / Artchitecture',
+          img: 'project4.jpg'
+        },
+        {
+          id: 6,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project6.jpg'
+        },
+        {
+          id: 7,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project8.jpg'
+        },
+        {
+          id: 8,
+          title: 'Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project8.jpg'
+        },
+        {
+          id: 9,
+          title: 'Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project6.jpg'
+        },
+        {
+          id: 10,
+          title: 'Classic Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project1.jpg'
+        },
+        {
+          id: 11,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project2.jpg'
+        },
+        {
+          id: 12,
+          title: 'Minimal Bedroom table',
+          text: ' Decor / Artchitecture',
+          img: 'project4.jpg'
+        },
+        {
+          id: 13,
+          title: 'System Table',
+          text: ' Decor / Artchitecture',
+          img: 'project7.jpg'
+        },
+        {
+          id: 14,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project5.jpg'
+        },
+        {
+          id: 15,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project3.jpg'
+        }
+      ],
+      otherProjects2: [
+        {
+          id: 0,
+          title: 'Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project1.jpg'
+        },
+        {
+          id: 1,
+          title: 'Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project3.jpg'
+        },
+        {
+          id: 2,
+          title: 'Classic Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project5.jpg'
+        },
+        {
+          id: 3,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project7.jpg'
+        },
+        {
+          id: 4,
+          title: 'Minimal Bedroom table',
+          text: ' Decor / Artchitecture',
+          img: 'project2.jpg'
+        },
+        {
+          id: 5,
+          title: 'System Table',
+          text: ' Decor / Artchitecture',
+          img: 'project4.jpg'
+        },
+        {
+          id: 6,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project6.jpg'
+        },
+        {
+          id: 7,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project8.jpg'
+        },
+        {
+          id: 8,
+          title: 'Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project8.jpg'
+        },
+        {
+          id: 9,
+          title: 'Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project6.jpg'
+        },
+        {
+          id: 10,
+          title: 'Classic Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project1.jpg'
+        },
+        {
+          id: 11,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project2.jpg'
+        },
+        {
+          id: 12,
+          title: 'Minimal Bedroom table',
+          text: ' Decor / Artchitecture',
+          img: 'project4.jpg'
+        },
+        {
+          id: 13,
+          title: 'System Table',
+          text: ' Decor / Artchitecture',
+          img: 'project7.jpg'
+        },
+        {
+          id: 14,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project5.jpg'
+        },
+        {
+          id: 15,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project3.jpg'
+        }
+      ],
+      otherProjects3: [
+        {
+          id: 0,
+          title: 'Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project1.jpg'
+        },
+        {
+          id: 1,
+          title: 'Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project3.jpg'
+        },
+        {
+          id: 2,
+          title: 'Classic Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project5.jpg'
+        },
+        {
+          id: 3,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project7.jpg'
+        },
+        {
+          id: 4,
+          title: 'Minimal Bedroom table',
+          text: ' Decor / Artchitecture',
+          img: 'project2.jpg'
+        },
+        {
+          id: 5,
+          title: 'System Table',
+          text: ' Decor / Artchitecture',
+          img: 'project4.jpg'
+        },
+        {
+          id: 6,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project6.jpg'
+        },
+        {
+          id: 7,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project8.jpg'
+        },
+        {
+          id: 8,
+          title: 'Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project8.jpg'
+        },
+        {
+          id: 9,
+          title: 'Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project6.jpg'
+        },
+        {
+          id: 10,
+          title: 'Classic Minimal Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project1.jpg'
+        },
+        {
+          id: 11,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project2.jpg'
+        },
+        {
+          id: 12,
+          title: 'Minimal Bedroom table',
+          text: ' Decor / Artchitecture',
+          img: 'project4.jpg'
+        },
+        {
+          id: 13,
+          title: 'System Table',
+          text: ' Decor / Artchitecture',
+          img: 'project7.jpg'
+        },
+        {
+          id: 14,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project5.jpg'
+        },
+        {
+          id: 15,
+          title: 'Modern Bedroom',
+          text: ' Decor / Artchitecture',
+          img: 'project3.jpg'
+        }
       ]
     }
   },
