@@ -42,9 +42,9 @@ const routes = [
     component: () => import('../pages/BlogDetailsPage.vue')
   },
   {
-    path: '/404',
+    path: '/page-not-found',
     name: '404',
-    component: () => import('../pages/404.vue')
+    component: () => import('../pages/PageNotFound.vue')
   },
   {
     path: '*',
@@ -53,6 +53,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes
 })
 
